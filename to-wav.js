@@ -5,8 +5,9 @@
 var toArrayBuffer = require('buffer-to-arraybuffer');
 var toBuffer = require('arraybuffer-to-buffer');
 var toWav = require('audiobuffer-to-wav');
-var audioContext = new (window.AudioContext || window.webkitAudioContext)();
 var getStdin = require('get-stdin').buffer;
+
+var audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
 getStdin()
   .then(function (buf) {
