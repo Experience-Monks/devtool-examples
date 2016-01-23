@@ -90,10 +90,10 @@ Other use cases:
 - User Media (audio/video recording)
 - Electron APIs like `browserWindow.capturePage`
 
-
 ## See Also
 
 More inspiration built on top of Electron, which `devtool` could also be used for.
 
-- [shadertoy-export](https://github.com/mattdesl/shadertoy-export)
-- [three-png-stream](https://github.com/Jam3/three-png-stream)
+- [tile-folder.js](https://gist.github.com/mattdesl/59214e0f0ee8b3ae614f) - tile a folder of images into a single images 
+- [three-png-stream](https://github.com/Jam3/three-png-stream) - stream ThreeJS canvas to a PNG file
+- [shadertoy-export](https://github.com/mattdesl/shadertoy-export) - export ShaderToy as a high-resolution PNG
