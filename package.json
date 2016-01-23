@@ -1,0 +1,43 @@
+{
+  "name": "devtool-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "arraybuffer-to-buffer": "0.0.4",
+    "audiobuffer-to-wav": "^1.0.0",
+    "buffer-to-arraybuffer": "0.0.4",
+    "electron-canvas-to-buffer": "^1.0.3",
+    "get-stdin": "^5.0.1",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "stacked": "^1.1.1"
+  },
+  "devDependencies": {
+    "devtool": "^1.5.1"
+  },
+  "scripts": {
+    "repl": "devtool",
+    "hello": "devtool hello-world.js",
+    "http": "devtool http.js --console --watch",
+    "gulp:watch": "devtool node_modules/gulp/bin/gulp.js -c -- watch",
+    "audio": "devtool to-wav.js -qh < audio.mp3 > audio.wav",
+    "canvas:dev": "NODE_ENV=development devtool canvas.js --watch --show",
+    "canvas": "devtool canvas.js --quit --headless > image.png"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/devtool-examples.git"
+  },
+  "homepage": "https://github.com/Jam3/devtool-examples",
+  "bugs": {
+    "url": "https://github.com/Jam3/devtool-examples/issues"
+  }
+}
