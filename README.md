@@ -2,7 +2,14 @@
 
 Some examples of using [devtool](https://github.com/Jam3/devtool) for a short talk/presentation at @nodeschool Toronto.
 
+
+## Intro
+
+[devtool](https://github.com/Jam3/devtool) is a new command-line tool for debugging, developing and profiling Node applications built on [Electron](https://github.com/atom/electron/). It also has some novel use cases for manipulating browser and Electron APIs, which we will explore here.
+
 ## Hello World
+
+If you `git clone` this repo, you can use `npm run` to execute commands. Or you can install `devtool` globally and use it directly in shell.
 
 ### `npm run repl`
 
@@ -20,6 +27,18 @@ Open the "Hello, World!" script in devtool:
 devtool hello-world.js
 ```
 
+Or with console redirection:
+
+```sh
+devtool hello-world.js --console
+```
+
+Or with file watching, for development:
+
+```sh
+devtool hello-world.js --watch
+```
+
 ## Debugging / Profiling Node
 
 ### `npm run http`
@@ -31,16 +50,6 @@ devtool http.js --console --watch
 ```
 
 Then try setting a breakpoint in one of the request handlers and loading [http://localhost:8080/](http://localhost:8080/).
-
-### `npm run gulp:watch`
-
-To debug a gulp script:
-
-```sh
-devtool node_modules/gulp/bin/gulp.js -c -- watch
-```
-
-Then try changing the SASS styles in `style/main.scss`.
 
 ## Browser APIs
 
@@ -73,9 +82,18 @@ devtool canvas.js --quit --headless > image.png
 
 ## Other Ideas
 
-Using interesting Chrome APIs like:
+Other use cases:
 
+- Debugging Gulp/Grunt scripts
 - Web Speech (synthesis, recognition)
 - Geolocation
 - User Media (audio/video recording)
 - Electron APIs like `browserWindow.capturePage`
+
+
+## See Also
+
+More inspiration built on top of Electron, which `devtool` could also be used for.
+
+- [shadertoy-export](https://github.com/mattdesl/shadertoy-export)
+- [three-png-stream](https://github.com/Jam3/three-png-stream)
