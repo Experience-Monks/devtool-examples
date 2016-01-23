@@ -2,10 +2,9 @@
 
 Some examples of using [devtool](https://github.com/Jam3/devtool) for a short talk/presentation at @nodeschool Toronto.
 
-
 ## Intro
 
-[devtool](https://github.com/Jam3/devtool) is a new command-line tool for debugging, developing and profiling Node applications built on [Electron](https://github.com/atom/electron/). It also has some novel use cases for manipulating browser and Electron APIs, which we will explore here.
+[devtool](https://github.com/Jam3/devtool) is a new command-line tool for debugging, developing and profiling Node applications built on [Electron](https://github.com/atom/electron/). We will also explore some novel use cases here, blending browser and Electron APIs.
 
 ## Hello World
 
@@ -18,6 +17,8 @@ Open a REPL with Node.js support:
 ```sh
 devtool
 ```
+
+![repl](http://i.imgur.com/P4Qgq8N.png)
 
 ### `npm run hello`
 
@@ -79,6 +80,10 @@ The production version renders the canvas as a PNG file and writes it to `proces
 ```
 devtool canvas.js --quit --headless > image.png
 ```
+
+Result:
+
+![canvas](./image.png)
 
 ## Other Ideas
 

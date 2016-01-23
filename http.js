@@ -3,7 +3,7 @@ var stacked = require('stacked');
 
 var app = stacked();
 
-// server entry point
+// server entry route
 app.use(function (req, res, next) {
   if (req.url === '/') {
     res.end('Hello, world!');
