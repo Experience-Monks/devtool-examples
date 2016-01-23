@@ -6,6 +6,19 @@ Some examples of using [devtool](https://github.com/Jam3/devtool) for a short ta
 
 [devtool](https://github.com/Jam3/devtool) is a new command-line tool for debugging, developing and profiling Node applications built on [Electron](https://github.com/atom/electron/). We will also explore some novel use cases here, blending browser and Electron APIs.
 
+## Usage
+
+Clone this module and install `devtool` globally:
+
+```sh
+git clone https://github.com/Jam3/devtool-examples.git
+cd devtool-examples
+npm install
+
+# also grab devtool globally
+npm install -g devtool
+```
+
 ## Hello World
 
 If you `git clone` this repo, you can use `npm run` to execute commands. Or you can install `devtool` globally and use it directly in shell.
