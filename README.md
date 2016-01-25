@@ -65,6 +65,8 @@ devtool http.js --console --watch
 
 Then try setting a breakpoint in one of the request handlers and loading [http://localhost:8080/](http://localhost:8080/).
 
+![breakpoint](http://i.imgur.com/FDhRyo2.png)
+
 ## Browser APIs
 
 ### `npm run audio`
